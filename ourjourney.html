@@ -21,28 +21,10 @@
 	<script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body>
-	<div id="sliding" class="sliding">
-		<div class="container">
-			<a href="#" class="show_hide fa fa-close pull-right"></a>
-			<form class="header-search-form">
-				<fieldset>
-					<input type="text" class="form-control" placeholder="Search here...">
-				</fieldset>
-			</form>
-		</div>
-	</div>
 	<div id="wrapper">
 		<header id="header" class="tg-header haslayout">
 			<nav id="nav" class="navbar navbar-default" data-spy="affix" data-offset-top="205">
 				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							<li class="active">
@@ -63,23 +45,25 @@
 				</div>
 			</nav>
 		</header>
-		<main id="main" class="haslayout">
+		<main id="main" class="haslayout" >
 			<div id="twocolumns" class="container">
 				<div class="row">
 						<article class="tg-post">
 							<figure>
-								<img src="img/alone.jpg" alt="image description">
+								<div id="instagram-gallery" class="instagram-gallery">
+									<div class="item">
+										<img src="img/alone.jpg" alt="image description">
+									</div>
+								</div>
 							</figure>
-							<div id="instagram-gallery" class="instagram-gallery">
-								<div class="item"><a href="#"><img src="img/alone.jpg" alt="image description"></a></div>
-							</div>
+							
 							<div class="tg-post-content">
 								<div class="post-meta category-name">
-									<span><a href="#">LifeStyle</a></span>
+									<span><a href="#">Author</a></span>
 								</div>
-								<h3><a href="#">Beauty Of Nature</a></h3>
+								<h3><a href="#">Title</a></h3>
 								<div class="post-meta">
-									<span class="date">Sep, 17 2015</span>
+									<span class="date">Date</span>
 								</div>
 								<div class="description">
 									<p>Sed quis sollicitudin eros, non lobortis purus. Ut enim lacus, efficitur non blandit ac, sollicitudin vel nibh. Aenean rhoncus pharetra ex. Sed facilisis interdum nunc, et tempus dolor gravida nec. Vivamus ultrices nisi dui, nec condimentum est ornare eu. Donec sed molestie arcu. Morbi eu suscipit felis, iaculis faucibus libero. Suspendisse eu augue ac nisi maximus posuere vitae finibus risus.</p>
@@ -87,7 +71,7 @@
 								</div>
 								<a href="#" class="tg-btn-countinuereading">countinue reading</a>
 								<div class="tg-post-foot">
-									<ul class="post-social-icons">
+									<ul class="post-social-icons pull-left">
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
@@ -95,7 +79,7 @@
 										<li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
 									</ul>
 									<div class="post-meta pull-right">
-										<span class="tg-post-author">Post By : <a href="#">Jhone Albert</a></span>
+										<span class="tg-post-author"><a href="#">View Comments</a></span>
 									</div>
 								</div>
 							</div>
