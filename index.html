@@ -20,11 +20,29 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-<body style="margin-top:30px;">
+<body>
+	<div id="sliding" class="sliding">
+		<div class="container">
+			<a href="#" class="show_hide fa fa-close pull-right"></a>
+			<form class="header-search-form">
+				<fieldset>
+					<input type="text" class="form-control" placeholder="Search here...">
+				</fieldset>
+			</form>
+		</div>
+	</div>
 	<div id="wrapper">
 		<header id="header" class="tg-header haslayout">
 			<nav id="nav" class="navbar navbar-default" data-spy="affix" data-offset-top="205">
 				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							<li class="selected">
@@ -49,162 +67,147 @@
 			<div class="container">
 				<div class="tg-banner-poststyle">
 					<figure>
-						<div id="tg-post-slider" class="post-slider">
-							<div class="item">
-								<div class="tg-category">
-									<figure><img src="img/alone.jpg" alt="image description"></figure>
-									<div class="category-content">
-										<div class="display-table">
-											<div class="display-table-cell">
-												<div class="post-meta">
-													<h2>Title</h2>
-												</div>
-												<div class="post-meta">
-													<span>Author</span>
-													<span>Date</span>
-												</div>
-												<div class="description">
-													<p>At vero eos et accusamus et iusto odio dignissimos ducimus provident,</p>
-												</div>
-												<div class="post-meta no-padding">
-													<span>
-														<a href="#">
-															<span><a href="#">| Continue Reading |</a></span>
-														</a>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div><!---->
+						<a href="#">
+							<div id="tg-post-slider" class="post-slider">
+								<div class="item"><figure><img src="img/alone.jpg" alt="image description"></figure></div>
+								<div class="item"><figure><img src="img/bent.jpg" alt="image description"></figure></div>
+								<div class="item"><figure><img src="img/date.jpeg" alt="image description"></figure></div>
 							</div>
-							<div class="item">
-								<div class="tg-category">
-									<figure><img src="img/calm.jpg" alt="image description"></figure>
-									<div class="category-content">
-										<div class="display-table">
-											<div class="display-table-cell">
-												<div class="post-meta">
-													<h2>Title</h2>
-												</div>
-												<div class="post-meta">
-													<span>Author</span>
-													<span>Date</span>
-												</div>
-												<div class="description">
-													<p>At vero eos et accusamus et iusto odio dignissimos ducimus provident,</p>
-												</div>
-												<div class="post-meta no-padding">
-													<span>
-														<a href="#">
-															<span><a href="#">| Continue Reading |</a></span>
-														</a>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div><!---->
-							</div>
-							<div class="item">
-								<div class="tg-category">
-									<figure><img src="img/bent.jpg" alt="image description"></figure>
-									<div class="category-content">
-										<div class="display-table">
-											<div class="display-table-cell">
-												<div class="post-meta">
-													<h2>Title</h2>
-												</div>
-												<div class="post-meta">
-													<span>Author</span>
-													<span>Date</span>
-												</div>
-												<div class="description">
-													<p>At vero eos et accusamus et iusto odio dignissimos ducimus provident,</p>
-												</div>
-												<div class="post-meta no-padding">
-													<span>
-														<a href="#">
-															<span><a href="#">| Continue Reading |</a></span>
-														</a>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div><!---->
-							</div>
-							<div class="item">
-								<div class="tg-category">
-									<figure><img src="img/hut.jpg" alt="image description"></figure>
-									<div class="category-content">
-										<div class="display-table">
-											<div class="display-table-cell">
-												<div class="post-meta">
-													<h2>Title</h2>
-												</div>
-												<div class="post-meta">
-													<span>Author</span>
-													<span>Date</span>
-												</div>
-												<div class="description">
-													<p>At vero eos et accusamus et iusto odio dignissimos ducimus provident,</p>
-												</div>
-												<div class="post-meta no-padding">
-													<span>
-														<a href="#">
-															<span><a href="#">| Continue Reading |</a></span>
-														</a>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div><!---->
-							</div>
-							<div class="item">
-								<div class="tg-category">
-									<figure><img src="img/rock.jpg" alt="image description"></figure>
-									<div class="category-content">
-										<div class="display-table">
-											<div class="display-table-cell">
-												<div class="post-meta">
-													<h2>Title</h2>
-												</div>
-												<div class="post-meta">
-													<span>Author</span>
-													<span>Date</span>
-												</div>
-												<div class="description">
-													<p>At vero eos et accusamus et iusto odio dignissimos ducimus provident,</p>
-												</div>
-												<div class="post-meta no-padding">
-													<span>
-														<a href="#">
-															<span><a href="#">| Continue Reading |</a></span>
-														</a>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div><!---->
-							</div>
-						</div>
+						</a>
 					</figure>
 					<div class="post-content">
 						<div class="display-table">
 							<div class="display-table-cell">
 								<div class="post-meta">
-									<span><a href="#">RARORIBICA</a></span>
+									<span><a href="#">LifeStyle</a></span>
+									<span>Sep, 17 2015</span>
 								</div>
 								<div class="title">
-									<h1>Our Journey <span>JOURNAL</span></h1>
+									<h1>What Do You Think Of <span>LifeStyle</span></h1>
 								</div>
 								<div class="post-meta no-padding">
 									<span>
-										Description goes here
+										<a href="#">
+											<i class="fa fa-user"></i>
+											<em>Jhone Smithon</em>
+										</a>
 									</span>
+									<span>
+										<a href="#">
+											<i class="fa fa-comment"></i>
+											<em>No Comments Yet</em>
+										</a>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="categories-slider" class="tg-categories">
+					<div class="item">
+						<div class="tg-category">
+							<figure>
+								<a href="#">
+									<img src="img/blue.jpg" alt="image description">
+								</a>
+							</figure>
+							<div class="category-content">
+								<div class="display-table">
+									<div class="display-table-cell">
+										<div class="post-meta">
+											<span><a href="#">LifeStyle</a></span>
+											<span>Sep, 17 2015</span>
+										</div>
+										<div class="description">
+											<p>At vero eos et accusamus et iusto odio dignissimos ducimus provident,</p>
+										</div>
+										<div class="post-meta no-padding">
+											<span>
+												<a href="#">
+													<i class="fa fa-user"></i>
+													<em>Jhone Smithon</em>
+												</a>
+											</span>
+											<span>
+												<a href="#">
+													<i class="fa fa-comment"></i>
+													<em>No Comments Yet</em>
+												</a>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="tg-category">
+							<figure>
+								<a href="#">
+									<img src="img/date.jpeg" alt="image description">
+								</a>
+							</figure>
+							<div class="category-content">
+								<div class="display-table">
+									<div class="display-table-cell">
+										<div class="post-meta">
+											<span><a href="#">LifeStyle</a></span>
+											<span>Sep, 17 2015</span>
+										</div>
+										<div class="description">
+											<p>At vero eos et accusamus et iusto odio dignissimos ducimus provident,</p>
+										</div>
+										<div class="post-meta no-padding">
+											<span>
+												<a href="#">
+													<i class="fa fa-user"></i>
+													<em>Jhone Smithon</em>
+												</a>
+											</span>
+											<span>
+												<a href="#">
+													<i class="fa fa-comment"></i>
+													<em>No Comments Yet</em>
+												</a>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="tg-category">
+							<figure>
+								<a href="#">
+									<img src="img/alone.jpg" alt="image description">
+								</a>
+							</figure>
+							<div class="category-content">
+								<div class="display-table">
+									<div class="display-table-cell">
+										<div class="post-meta">
+											<span><a href="#">LifeStyle</a></span>
+											<span>Sep, 17 2015</span>
+										</div>
+										<div class="description">
+											<p>At vero eos et accusamus et iusto odio dignissimos ducimus provident,</p>
+										</div>
+										<div class="post-meta no-padding">
+											<span>
+												<a href="#">
+													<i class="fa fa-user"></i>
+													<em>Jhone Smithon</em>
+												</a>
+											</span>
+											<span>
+												<a href="#">
+													<i class="fa fa-comment"></i>
+													<em>No Comments Yet</em>
+												</a>
+											</span>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
