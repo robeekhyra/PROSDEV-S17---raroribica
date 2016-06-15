@@ -1407,3 +1407,19 @@ button[type="submit"].btn-send:hover{
 td{
 	padding:5px;
 }
+
+.absolute-center{
+	width:300px;
+	height:200px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-100px 0 0 -150px;
+}
+
+.div-center{
+	width: 500px !important;
+	height:100%;
+    display:table-cell;
+    vertical-align:middle;
+}
