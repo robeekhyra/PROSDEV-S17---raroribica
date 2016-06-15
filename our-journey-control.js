@@ -8,6 +8,9 @@
 	displayArticle({img_source: "img/bent.jpg" , date: "May 3, 2016", author: "Camille Saavedra", title: "Stepping back in time in Hydra, Greece", content: "<p>	While so many islands in Greece are being slowly conquered by foreigners (cough, cough Santorini and Mykonos, I’m looking at you two), it’s great to know that there are plenty beautiful islands held firmly in the hands of Greeks. As soon as I read about Hydra last summer, I knew I had to make it a stop on my itinerary through Greece, and I wasn’t disappointed!</p> <p> When there are so many islands to chose from to visit in Greece, for me at least, it was hard to pinpoint down which ones to visit. Two important things about Hydra struck me, and as fate would have it, they were the two things I loved most about the island. </p> <p> Prepare to be shocked. </p>"});
 	displayArticle({img_source: "img/hut.jpg" , date: "April 21, 2016", author: "Richelle Chua", title: "Sleeping under the stars on the Great Barrier Reef", content: "<p>	Exciting news everyone, in one week exactly I’ll be boarding a plane back to Australia! And no, I’m not getting deported from New Zealand as I originally feared, rather I am embarking on an awesome new adventure in Tropical North Queensland, one of my favorite regions!I can’t wait!</p> <p> But more on that later, while I have been getting ready I found myself reminiscing about the first time I was in the Whitsundays, and I realized I haven’t even told the full story of my favorite activity on my blog. For shame! </p>"});
 	displayArticle({img_source: "img/rock.jpg" , date: "April 1, 2016", author: "Robee Te", title: "Tales by Light in Byron Bay, Australia", content: "<p>	Byron Bay, where have you been all my life?</p> <p> At the end of my big trip a few months ago, I found myself coming back to New Zealand via Australia, a usual stop on long-haul flights between this part of the world and Europe. While more often than not when I am in Australia, I am in Queensland, an area that I love and know pretty well, so I was really excited this time around when I got the chance to check out Byron Bay for the first time with Canon.</p>"});
+	
+	$('.article-modal-content').css('height', window.innerHeight*0.9);
+	$('.article-modal-content .tg-post-content .description').css('height', window.innerHeight*0.6);
 })();
 
 function displayArticle(article){
@@ -50,7 +53,5 @@ function displayArticle(article){
 	'		</div>' +
 	'	</div>' +
 	'</article>';
-	
 	$( ".next-previous" ).before( article_content );
-	
 }
