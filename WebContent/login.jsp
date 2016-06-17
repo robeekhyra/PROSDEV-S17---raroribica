@@ -1,5 +1,6 @@
-
-<!doctype html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -39,13 +40,13 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							
-							<li><a href="index.html">Home</a></li>
-							<li><a href="ourjourney.html">our journey</a></li>
-							<li><a href="newjourney.html">new journey</a></li>
-							<li><a href="aboutus.html">about us</a></li>
+							<li><a href="index.jsp">Home</a></li>
+							<li><a href="our-journey.jsp">our journey</a></li>
+							<li><a href="new-journey.jsp">new journey</a></li>
+							<li><a href="about-us.jsp">about us</a></li>
 							<li><a href="#" class="btn-search fa fa-search show_hide">search</a></li>
 							<li class="selected" style="position: absolute; margin-left: 220px;">
-								<a href="login.html">Log in</a>
+								<a href="login.jsp">Log in</a>
 								<!--<ul class="dropdown-menu">
 									<li class="active"><a href="index.html">Home</a></li>
 									<li><a href="index-slider.html">Home slider</a></li>
@@ -55,7 +56,7 @@
 									<li><a href="index-fixnav.html">Sticky Nav</a></li>
 								</ul>-->
 							</li>
-							<li style="position: absolute; margin-left: 290px;"><a href="signup.html">Sign up</a></li>
+							<li style="position: absolute; margin-left: 290px;"><a href="signup.jsp">Sign up</a></li>
 						</ul>
 					</div>
 				</div>
@@ -69,7 +70,7 @@
 						<div class="description">
 							<p>Welcome back to our journey journal.</p>
 						</div>
-						<form class="form-newsletter" action="#" method="post" name="create new post">
+						<form class="form-newsletter" action="LogInServlet" method="post">
 							<fieldset>
 								<div class="form-group"><input type="text" name="username" class="form-control" placeholder="Username" required></div>
 								<div class="form-group"><input type="password" name="password" class="form-control" placeholder="Password" required></div>
@@ -77,7 +78,7 @@
 							</fieldset>
 						</form>
 						<div class="description" style="text-align:center">
-							<p>No account yet? <a href="signup.html">Sign Up here.</a> </p>
+							<p>No account yet? <a href="signup.jsp">Sign Up here.</a> </p>
 						</div>
 					</div>
 				</div>

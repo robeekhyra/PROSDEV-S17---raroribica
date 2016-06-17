@@ -7,17 +7,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Model.Account;
+import database.DBManager;
+
 /**
- * Servlet implementation class AddCommentServlet
+ * Servlet implementation class LogInServlet
  */
-@WebServlet("/AddCommentServlet")
-public class AddCommentServlet extends HttpServlet {
+@WebServlet("/LogInServlet")
+public class LogInServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AddCommentServlet() {
+    public LogInServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -34,17 +37,22 @@ public class AddCommentServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
-//		String comment = null;
-//		String author = null;
-//		int postID = 0;
-//
-//		QueryFactory qf = new QueryFactory();
-//
-//		// Get information
-//		qf.addComment(comment, author, postID);
-//		// Redirect to post page
-//		response.sendRedirect("continuereading.jsp");
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		
+		Account account = new Account(username, password);
+		DBManager dbmanager = new DBManager();
+		account = dbmanager.login(account);
+		
+		System.out.println("account = "+account);
+		
+		if (account != null){
+			request.getSession().setAttribute("account", account);
+			request.getRequestDispatcher("index.jsp").forward(request, response);
+		} else {
+			response.sendRedirect("login.jsp");
+		}
+		
 	}
 
 }

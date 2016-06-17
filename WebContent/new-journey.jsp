@@ -1,5 +1,6 @@
-
-<!doctype html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -19,6 +20,19 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	<script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<script type="text/javascript">
+      $(document).ready(function() {
+        $('#btn-upload').click(function (e) {
+          e.preventDefault();
+          $('#file').click();
+        });
+      })
+
+      function fileSelect(e) {
+        $('#filename').val(e.target.files[0].name);
+      }
+
+    </script>
 </head>
 <body>
 	<div id="sliding" class="sliding">
@@ -31,21 +45,15 @@
 			</form>
 		</div>
 	</div>
-	
+
 	<div id="wrapper">
 		<header id="header" class="tg-header haslayout">
 			<nav id="nav" class="navbar navbar-default" data-spy="affix" data-offset-top="205">
 				<div class="container">
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="ourjourney.html">our journey</a></li>
-							<li><a href="newjourney.html">new journey</a></li>
-							<li><a href="aboutus.html">about us</a></li>
-							<li><a href="#" class="btn-search fa fa-search show_hide">search</a></li>
-							<li style="position: absolute; margin-left: 220px;"><a href="login.html">Log in</a></li>
-							<li class="selected" style="position: absolute; margin-left: 290px;">
-								<a href="signup.html">Sign up</a>
+							<li class="active">
+								<a href="index.jsp">Home</a>
 								<!--<ul class="dropdown-menu">
 									<li class="active"><a href="index.html">Home</a></li>
 									<li><a href="index-slider.html">Home slider</a></li>
@@ -55,36 +63,37 @@
 									<li><a href="index-fixnav.html">Sticky Nav</a></li>
 								</ul>-->
 							</li>
+							<li><a href="our-journey.jsp">our journey</a></li>
+							<li class="selected"><a href="new-journey.jsp">new journey</a></li>
+							<li><a href="about-us.jsp">about us</a></li>
+							<li><a href="#" class="btn-search fa fa-search show_hide">search</a></li>
+							<li style="position: absolute; margin-left: 220px;"><a href="login.jsp">Log in</a></li>
+							<li style="position: absolute; margin-left: 290px;"><a href="signup.jsp">Sign up</a></li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</header>
-		
 		<main id="main" class="haslayout" >
 			<div id="twocolumns" class="container">
 				<div class="row">
-					<div class="box div-center">
+					<div class="box">
 						<div class="description">
-							<p>Be part of our journey journal.</p>
+							<p>Create a new journey entry in the journal.</p>
 						</div>
 						<form class="form-newsletter" action="#" method="post" name="create new post">
 							<fieldset>
-								<div class="form-group"><input type="text" name="name" class="form-control" placeholder="Name" required></div>
-								<div class="form-group"><input type="text" name="username" class="form-control" placeholder="Username" required></div>
-								<div class="form-group"><input type="password" name="password1" class="form-control" placeholder="Password" required></div>
-								<div class="form-group"><input type="password" name="password2" class="form-control" placeholder="Confirm Password" required></div>
-								<div class="form-group"><button type="submit">Sign Up</button></div>
+								<div class="form-group"><input type="text" name="name" class="form-control" placeholder="Author Name" required></div>
+								<div class="form-group"><input type="text" name="title" class="form-control" placeholder="Journey Title" required></div>
+								<div class="form-group"><input type="text" name="cover" class="form-control" placeholder="Link to Cover Photo" required></div>
+								<div class="form-group"><textarea class="form-control" rows="15" placeholder="Journey Story" required></textarea></div>
+								<div class="form-group"><button type="submit">Share Journey</button></div>
 							</fieldset>
 						</form>
-						<div class="description" style="text-align:center">
-							<p>Already have an account? <a href="login.html">Log In here.</a> </p>
-						</div>
 					</div>
 				</div>
 			</div>
 		</main>
-		
 		<footer id="footer" class="haslayout">
 			<div class="copyright">
 				<div class="container">
@@ -96,11 +105,10 @@
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/isotop.js"></script>
 	<script src="js/theia-sticky-sidebar.js"></script>
 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script src="js/gmap3.min.js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript" src="our-journey-control.js"></script>
 </body>
 </html>

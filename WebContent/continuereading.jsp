@@ -1,5 +1,6 @@
-
-<!doctype html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -52,7 +53,7 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							<li class="active">
-								<a href="index.html">Home</a>
+								<a href="index.jsp">Home</a>
 								<!--<ul class="dropdown-menu">
 									<li class="active"><a href="index.html">Home</a></li>
 									<li><a href="index-slider.html">Home slider</a></li>
@@ -62,12 +63,12 @@
 									<li><a href="index-fixnav.html">Sticky Nav</a></li>
 								</ul>-->
 							</li>
-							<li><a href="ourjourney.html">our journey</a></li>
-							<li><a href="newjourney.html">new journey</a></li>
-							<li><a href="aboutus.html">about us</a></li>
+							<li><a href="our-journey.jsp">our journey</a></li>
+							<li><a href="new-journey.jsp">new journey</a></li>
+							<li><a href="about-us.jsp">about us</a></li>
 							<li><a href="#" class="btn-search fa fa-search show_hide">search</a></li>
-							<li style="position: absolute; margin-left: 220px;"><a href="login.html">Log in</a></li>
-							<li style="position: absolute; margin-left: 290px;"><a href="signup.html">Sign up</a></li>
+							<li style="position: absolute; margin-left: 220px;"><a href="login.jsp">Log in</a></li>
+							<li style="position: absolute; margin-left: 290px;"><a href="signup.jsp">Sign up</a></li>
 						</ul>
 					</div>
 				</div>
@@ -96,7 +97,7 @@
 								<div class="description">
 									<p> Kalimera!!! Good morning in Greek, this was my favorite way to start each and every day for the 2 weeks I was in Greece in June. 
 										Well, that along with an iced cappuccino and a giant bowl of Greek yogurt topped with fruit and honey. 
-										So flippin’ tasty!
+										So flippin' tasty!
 									</p>
 									<p>	Hot off the boat from traveling from Brindisi, Italy to Corfu, Greece, I knew I needed to schedule in some alone time away from large groups of people, preferably on a secluded beautiful beach before starting up another hectic month and a half of Euro travels. 
 										Not to mention I was glow-in-the-dark pale. 

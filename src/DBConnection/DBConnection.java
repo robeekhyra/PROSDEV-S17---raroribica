@@ -19,9 +19,9 @@ public class DBConnection {
 		}
 		this.driverName = "com.mysql.jdbc.DriverManager";
 		this.url = "jdbc:mysql://127.0.0.1:3306/";
-		this.dbName = "prosdev_rarirobica";
+		this.dbName = "prosdev";
 		this.username = "root"; //root
-		this.password = "1234";
+		this.password = "abc123";
 	}
 
 	public Connection getConnection() {

@@ -1,5 +1,6 @@
-
-<!doctype html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -37,7 +38,7 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							<li class="active">
-								<a href="index.html">Home</a>
+								<a href="index.jsp">Home</a>
 								<!--<ul class="dropdown-menu">
 									<li class="active"><a href="index.html">Home</a></li>
 									<li><a href="index-slider.html">Home slider</a></li>
@@ -47,12 +48,12 @@
 									<li><a href="index-fixnav.html">Sticky Nav</a></li>
 								</ul>-->
 							</li>
-							<li class="selected"><a href="our-journey.html">our journey</a></li>
-							<li><a href="new-journey.html">new journey</a></li>
-							<li><a href="about-us.html">about us</a></li>
+							<li class="selected"><a href="our-journey.jsp">our journey</a></li>
+							<li><a href="new-journey.jsp">new journey</a></li>
+							<li><a href="about-us.jsp">about us</a></li>
 							<li><a href="#" class="btn-search fa fa-search show_hide">search</a></li>
-							<li style="position: absolute; margin-left: 220px;"><a href="login.html">Log in</a></li>
-							<li style="position: absolute; margin-left: 290px;"><a href="signup.html">Sign up</a></li>
+							<li style="position: absolute; margin-left: 220px;"><a href="login.jsp">Log in</a></li>
+							<li style="position: absolute; margin-left: 290px;"><a href="signup.jsp">Sign up</a></li>
 						</ul>
 					</div>
 				</div>
@@ -79,20 +80,15 @@
 						<div style="width:58%; padding:1%; float:left">
 							<div class="tg-post-content">
 								<div class="post-meta category-name">
-									<span class="date">April 1, 2016</span>
+									<span class="date"></span>
 								</div>
-								<h3><a href="#">Tales by Light in Byron Bay, Australia</a></h3>
+								<h3><a href="#" class="title"></a></h3>
 								<div class="post-meta">
-									<span><a href="#">Robee Te</a></span>
+									<span><a href="#" class="author"></a></span>
 								</div>
-								<div class="description">
-									<p>	Byron Bay, where have you been all my life?
-									</p>
-									<p> At the end of my big trip a few months ago, I found myself coming back to New Zealand via Australia, a usual stop on long-haul flights between this part of the world and Europe.
-										While more often than not when I am in Australia, I am in Queensland, an area that I love and know pretty well, so I was really excited this time around when I got the chance to check out Byron Bay for the first time with Canon.
-									</p>
+								<div class="description" style="overflow-y:auto">
 								</div>
-								<div class="tg-post-foot">
+								<div class="tg-post-foot" style="margin:2%;">
 									<ul class="post-social-icons pull-left">
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
